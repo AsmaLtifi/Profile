@@ -1,81 +1,70 @@
-body{
+*{
     margin: 0;
     padding: 0;
-    /*border: 1px solid #c8ee83;
-     #d274a6 */
+    box-sizing: border-box;
+}
+body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: normal;
 }
 
-div.menue{
+#menue{
     position: fixed;
-    margin-left: 4.6%;
-    top: 0px;
-    left: -2.5%;
+    width: 100%;
+    background-color: white;
 }
 
 #menue-item-list{
     padding-top: 2%;
-    margin-top: 0;
-    margin-left: 0;
-    padding-right: 21.2%;
-    width: 268%;
     height: 1.98em;
-    font-size: 18px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: white;
+    font-size: 112.5%;
 }
 
-li.first-menue-item{
-    display:inline-block;
-    float:none;
-    text-align: center;
-    margin-left: 2%;
-    font-weight: 525;
+td.white-space-border{
+    width: 5%;
 }
 
-li.menue-item{
-    display:inline;
-    float: none;
-    margin-left: 15%;
+td.menue-item{
+    width: 18%;
     text-align: center;
     font-weight: 525;
 }
 
-li.menue-item a, li.first-menue-item a{
+td.menue-item a{
     text-decoration: none;
     color: #cc2f83ce;
 }
 
-li.menue-item a:hover, li.first-menue-item a:hover{
+td.menue-item a:hover{
     text-decoration: underline;
     color: #9ecc49c5;
 }
 
+#home{
+    border: 1px solid white;
+    padding-top: 3%;
+}
+
 #header{
-    margin-top: 3%;
-    margin-left: 2.1%;
-    margin-right: 2.1%;
-    margin-bottom: 5.1%;
-    padding-bottom: 4.2%;
+    width: 90%;
+    padding-top: 2.5%;
+    padding-bottom: 5%;
     background: linear-gradient(to top right,#cc2f83ce 0%,#d274a6ce 100%);
     background-size: cover;
     background-position: center;
     color: whitesmoke;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
-#home-table{
-    margin-left: 7%;
-    margin-right: 7%;
+#home-table, .content-table{
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #header-image{
     display: inline-block; 
     vertical-align: bottom;
     margin-top: 10%;
-    padding: 0;
     border: 0;
     width: 88.7%;
     height:52.63%;
@@ -85,36 +74,34 @@ li.menue-item a:hover, li.first-menue-item a:hover{
 h1.header, td.header{
     font-family: 'Didot Italic';
     font-weight: 400;
-    font-size: 100px;
+    font-size: 255%;
     line-height: 1;
     text-align: center;
     font-style: italic;
     text-transform: uppercase;
     vertical-align: baseline;
+    margin-top: 5%;
     margin-bottom: 2%;
 }
 
 #content-cell{
+    padding-left:5%;
     width: 50%;
 }
 
 h2.intro{
-    font-size: 20px;
+    font-size: 125%;
     text-align: center;
     font-family: 'Futura Book';
     font-weight: 500;
-    padding: 0;
-    margin: 0;
 }
 
 .chevron-left, .chevron-right{
     font-family: 'Didot Italic';
     font-style: italic;
     font-weight: 400;
-    font-size: 50px;
+    font-size: 315%;
     vertical-align:baseline;
-    padding: 0;
-    margin: 0;
 }
 
 h2.reference-my-name{    
@@ -122,24 +109,25 @@ h2.reference-my-name{
     font-family: 'Futura Book';
     font-weight: normal;
     line-height: 0.2;
-    font-size: 20px;
+    font-size: 125%;
     font-style: oblique;
-    margin: 0;
     padding-right: 25%;      
 }
 
 #about-me-link{
+    text-decoration: none;
     color: whitesmoke;
 }
 
 #about-me-link:hover{
+    text-decoration: none;
     color: #9ecc49c5;
 }
 
 .scroll-container{
-    position: absolute;
+    position: relative;
     display: block;
-    bottom: 5%;
+    bottom: 30px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -147,7 +135,7 @@ h2.reference-my-name{
 .other-scroll-container{
     position: relative;
     display: block;
-    bottom: 30px;
+    bottom: 50px;
     right: 50%;
     transform: translate(50%, -50%);
 }
@@ -156,8 +144,7 @@ h2.reference-my-name{
     font-family: 'Futura Book';
     text-align: center;
     font-weight: 400;
-    font-size: 18px;
-    -webkit-font-smoothing: antialiased;
+    font-size: 112.5%;
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
@@ -168,7 +155,6 @@ h2.reference-my-name{
     font-family: verdana;
     text-align: center;
     font-weight: 500;
-    -webkit-font-smoothing: antialiased;
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
@@ -185,48 +171,106 @@ a.scroll-link:hover{
     text-decoration: none;
 }
 
-#about-me, #my-journey, #my-skills, #contact-me, #home{
+#about-me, #my-journey, #my-skills, #contact-me{
     border: 1px solid white;
+    padding-top: 5%;
+
 }
 
 #about-me-container, #my-journey-container, #my-skills-container, #contact-me-container{
-    /*
-    margin-top: 3%;
-    margin-left: 2.1%;
-    margin-right: 2.1%;
-    margin-bottom: 5.1%;
-    padding-bottom: 4.2%;
-    */
-    box-sizing: border-box;
-    margin-top: 3%;
-    margin-left: 2.1%;
-    margin-right: 2.1%;
-    margin-bottom: 0.5%;/*2.5%*/
-    padding-bottom: 10.5%;
-    padding-top: 10%;
+    width: 107rem;
+    margin-bottom: 20%;
+    padding-top: 12%;
+    padding-bottom: 12%;
     background-image: linear-gradient(to top right,rgba(255, 255, 255, 0.9) 0%, rgba(245, 245, 245, 0.95) 100%), url(../images/social-media-collection.png);
     background-position: top;
     color: black;
     border: 1px solid #d274a6ce;
-    border-radius: 10px;
+    border-radius: 15px;
+}
+
+#contact-me-container{
+    padding-top: 15%;
+    padding-bottom: 6%;
 }
 
 .section-title-cell{
-    box-sizing: border-box; 
     width:35%;
-    vertical-align:middle; 
+    vertical-align:top; 
     text-align: center;
-    color: #9ecc49c5;
-    margin-right: 5%;
-    padding-right: 5%;
+    color:#9ecc49c5; 
+    font-size: 175%;
 }
 
 .section-content-cell{
-    box-sizing: border-box;
+    width:65%;
     vertical-align:middle; 
     padding-right:7.5%;
     padding-left: 7.5%;
-    font-size: 20px;
+    font-size: 125%;
     font-family: 'Futura Book';
     font-weight: 500;
+}
+
+.contact-form{
+    display:block; 
+    text-align: center;
+    margin-top: -8%;
+    width: 65rem;
+}
+
+#contact-form{
+    display:inline-block;
+    font-size: 90%;
+}
+
+#form-content{
+    display: block;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+  width: 30rem;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+label{
+    color: #9ecc49c5;
+}
+
+/* Input fields on focus*/
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    height: 2rem;
+}
+textarea{
+    height: 5rem;
+}
+
+.submit-button {
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-size: 16px;
+  }
+
+.field-container{
+    text-align: left;
+    display: block;
+    margin: 2%;
+
 }
