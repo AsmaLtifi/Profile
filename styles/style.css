@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: normal;
@@ -10,6 +11,7 @@ body{
 
 #menue{
     position: fixed;
+    padding-top: 0.7%;
     width: 100%;
     background-color: white;
 }
@@ -17,7 +19,7 @@ body{
 #menue-item-list{
     padding-top: 2%;
     height: 1.98em;
-    font-size: 112.5%;
+    font-size: 120%;/*112.5%;*/
 }
 
 td.white-space-border{
@@ -27,7 +29,7 @@ td.white-space-border{
 td.menue-item{
     width: 18%;
     text-align: center;
-    font-weight: 525;
+    font-weight: bold;
 }
 
 td.menue-item a{
@@ -87,20 +89,22 @@ h1.header, td.header{
 #content-cell{
     padding-left:5%;
     width: 50%;
+    font-size: 110%;
 }
 
 h2.intro{
-    font-size: 125%;
+    font-size: 150%;
     text-align: center;
     font-family: 'Futura Book';
-    font-weight: 500;
+    font-weight: bold;
+    margin-bottom: 8%;
 }
 
 .chevron-left, .chevron-right{
     font-family: 'Didot Italic';
     font-style: italic;
     font-weight: 400;
-    font-size: 315%;
+    font-size: 200%;
     vertical-align:baseline;
 }
 
@@ -109,9 +113,10 @@ h2.reference-my-name{
     font-family: 'Futura Book';
     font-weight: normal;
     line-height: 0.2;
-    font-size: 125%;
+    font-size: 150%;
     font-style: oblique;
-    padding-right: 25%;      
+    padding-right: 15%;
+    color: #9ecc49c5;      
 }
 
 #about-me-link{
@@ -135,7 +140,7 @@ h2.reference-my-name{
 .other-scroll-container{
     position: relative;
     display: block;
-    bottom: 50px;
+    bottom: 30px;
     right: 50%;
     transform: translate(50%, -50%);
 }
@@ -143,7 +148,7 @@ h2.reference-my-name{
 .scroll-text{
     font-family: 'Futura Book';
     text-align: center;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 112.5%;
     font-style: normal;
     font-variant: normal;
@@ -154,7 +159,7 @@ h2.reference-my-name{
 .icon-container{
     font-family: verdana;
     text-align: center;
-    font-weight: 500;
+    font-weight: bold;
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
@@ -181,13 +186,26 @@ a.scroll-link:hover{
     width: 107rem;
     margin-bottom: 20%;
     padding-top: 12%;
-    padding-bottom: 12%;
-    background-image: linear-gradient(to top right,rgba(255, 255, 255, 0.9) 0%, rgba(245, 245, 245, 0.95) 100%), url(../images/social-media-collection.png);
+    padding-bottom: 5%;
+    background-image: linear-gradient(to top right,rgba(255, 255, 255, 0.65) 0%, rgba(245, 245, 245, 0.95) 100%), url(../images/social-media-collection-green-pink.png);
     background-position: top;
     color: black;
-    border: 1px solid #d274a6ce;
+    border: 2px dashed #d274a6ce;
     border-radius: 15px;
 }
+
+#my-journey-container{
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+
+#my-journey-container .section-title-cell{
+    padding-top: 12%;
+}
+
+    /* #my-skills-container{
+        padding-top: 10%;
+    } */
 
 #contact-me-container{
     padding-top: 15%;
@@ -200,23 +218,140 @@ a.scroll-link:hover{
     text-align: center;
     color:#9ecc49c5; 
     font-size: 175%;
+    text-decoration: underline;
 }
 
 .section-content-cell{
     width:65%;
-    vertical-align:middle; 
+    vertical-align:text-top; 
     padding-right:7.5%;
     padding-left: 7.5%;
-    font-size: 125%;
+    font-size: 150%;
     font-family: 'Futura Book';
     font-weight: 500;
+    line-height: 1;
+}
+
+.contact-logos-table{
+    border: 2px dashed #d274a6ce;
+    border-radius: 15px;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+img.facebook-logo{
+    height: 9.77%;
+    width: 9.77%;
+    margin-left: 0%;
+}
+
+img.instagram-logo{
+    height: 8.6%;
+    width: 8.6%;
+    margin-left: 12%;
+}
+
+img.gmail-logo{
+    height: 9.77%;
+    width: 9.77%;
+    margin-left: 12%;
+}
+
+img.linkedin-logo{
+    height: 9.77%;
+    width: 9.77%;
+    margin-left: 12%;
+}
+
+ #academy-journey-div{
+     border: 2px dashed #d274a6ce;
+     border-radius: 15px;
+} 
+
+.school-logo-cell{
+    width: 33%;
+    text-align: center;
+    padding: 2% 0;
+}
+
+.school-text-cell{
+    vertical-align: middle;
+}
+
+#concordia-logo{
+    height: 30%;
+    object-fit: contain;
+}
+
+#UCT-logo{
+    height: 70%;
+    width: 90%;
+    object-fit: contain;
+}
+
+#UAS-logo{
+    height: 50%;
+    object-fit: contain;
+}
+
+#prof-journey-div{
+    text-align: center;
+    vertical-align: middle;
+    border: 2px dashed #d274a6ce;
+    border-radius: 15px;
+}
+
+.prof-logo-cell{
+    width: 33%;
+    padding: 1.5% 0;
+}
+
+#desjardins-logo{
+    width: 30%;
+    object-fit: contain;
+}
+
+#qatar-airways-logo{
+ width: 60%;
+ object-fit: contain;
+}
+
+#hudson_Bay_Logo{
+    width: 50%;
+    object-fit: contain;
+}
+
+#travel-todo-logo{
+    width: 60%;
+    object-fit: contain;
+}
+
+#exceljob-logo{
+    width: 60%;
+    object-fit: contain;
+}
+
+#keejob-logo{
+    width: 45%;
+    object-fit: contain;
+}
+
+.skillset{
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: 2px dashed #d274a6ce;
+    margin-left: 5%;
+    line-height: 155%;
+}
+
+.skillset li{
+    margin-left: 10%;
 }
 
 .contact-form{
     display:block; 
     text-align: center;
-    margin-top: -8%;
-    width: 65rem;
+    margin-top: -12%;
 }
 
 #contact-form{
@@ -240,9 +375,10 @@ select {
 
 label{
     color: #9ecc49c5;
+    font-weight: bold;
+    font-size: 110%;
 }
 
-/* Input fields on focus*/
 input[type="text"]:focus,
 input[type="password"]:focus,
 textarea:focus {
@@ -265,9 +401,17 @@ textarea{
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
-    font-size: 16px;
+    font-size: 110%;
   }
 
+  .submit-button:hover {
+    color: #9ecc49c5;
+  }
+
+.submit-button:active {
+    color: #d274a6ce;
+
+}
 .field-container{
     text-align: left;
     display: block;
