@@ -44,7 +44,8 @@ td.menue-item a:hover{
 
 #home{
     border: 1px solid white;
-    padding-top: 3%;
+    padding-top: 4%;
+    padding-bottom: 2%;
 }
 
 #header{
@@ -176,62 +177,6 @@ a.scroll-link:hover{
     text-decoration: none;
 }
 
-#about-me, #my-journey, #my-skills, #contact-me{
-    border: 1px solid white;
-    padding-top: 5%;
-
-}
-
-#about-me-container, #my-journey-container, #my-skills-container, #contact-me-container{
-    width: 107rem;
-    margin-bottom: 20%;
-    padding-top: 12%;
-    padding-bottom: 5%;
-    background-image: linear-gradient(to top right,rgba(255, 255, 255, 0.65) 0%, rgba(245, 245, 245, 0.95) 100%), url(../images/social-media-collection-green-pink.png);
-    background-position: top;
-    color: black;
-    border: 2px dashed #d274a6ce;
-    border-radius: 15px;
-}
-
-#my-journey-container{
-    padding-top: 2%;
-    padding-bottom: 4%;
-}
-
-#my-journey-container .section-title-cell{
-    padding-top: 12%;
-}
-
-    /* #my-skills-container{
-        padding-top: 10%;
-    } */
-
-#contact-me-container{
-    padding-top: 15%;
-    padding-bottom: 6%;
-}
-
-.section-title-cell{
-    width:35%;
-    vertical-align:top; 
-    text-align: center;
-    color:#9ecc49c5; 
-    font-size: 175%;
-    text-decoration: underline;
-}
-
-.section-content-cell{
-    width:65%;
-    vertical-align:text-top; 
-    padding-right:7.5%;
-    padding-left: 7.5%;
-    font-size: 150%;
-    font-family: 'Futura Book';
-    font-weight: 500;
-    line-height: 1;
-}
-
 .contact-logos-table{
     border: 2px dashed #d274a6ce;
     border-radius: 15px;
@@ -261,6 +206,58 @@ img.linkedin-logo{
     height: 9.77%;
     width: 9.77%;
     margin-left: 12%;
+}
+
+#about-me, #my-journey, #my-skills, #contact-me{
+    border: 1px solid white;
+    padding-top: 4%;
+    padding-bottom: 3%;
+}
+
+#about-me-container, #my-journey-container, #my-skills-container, #contact-me-container{
+    width: 107rem;
+    margin-bottom: 20%;
+    padding-top: 12%;
+    padding-bottom: 10%;
+    background-image: linear-gradient(to top right,rgba(255, 255, 255, 0.65) 0%, rgba(245, 245, 245, 0.95) 100%), url(../images/social-media-collection-green-pink.png);
+    background-position: top;
+    color: black;
+    border: 2px dashed #d274a6ce;
+    border-radius: 15px;
+}
+
+#my-journey-container{
+    padding-top: 3%;
+    padding-bottom: 4%;
+}
+
+#my-journey-container .section-title-cell{
+    padding-top: 12%;
+}
+
+#contact-me-container{
+    padding-top: 14%;
+    padding-bottom: 6%;
+}
+
+.section-title-cell{
+    width:35%;
+    vertical-align:top; 
+    text-align: center;
+    color:#9ecc49c5; 
+    font-size: 175%;
+    text-decoration: underline;
+}
+
+.section-content-cell{
+    width:65%;
+    vertical-align:text-top; 
+    padding-right:7.5%;
+    padding-left: 7.5%;
+    font-size: 150%;
+    font-family: 'Futura Book';
+    font-weight: 500;
+    line-height: 1;
 }
 
  #academy-journey-div{
@@ -351,7 +348,8 @@ img.linkedin-logo{
 .contact-form{
     display:block; 
     text-align: center;
-    margin-top: -12%;
+    margin-top: -10%;
+    margin-left: 20%;
 }
 
 #contact-form{
